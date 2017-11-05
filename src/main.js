@@ -2,7 +2,7 @@ const LineAPI = require('./api');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 let exec = require('child_process').exec;
 
-var myStaff = ['uf7c3c593220a325c1c1fa27efeb13a9d','uf25c0403a3d183da6596ab2d3625ab06'];
+var myStaff = ['uacf8824fa827c271a48a2fa4c337266c'];
 
 const myAdmin = ['ub4974c6489c969402713a974b568ee9e','ue6ab7d65e34868a3e2cc2d655eedf25b','ub541f0703be3a3c29a6c05cf3c85f073','u63985fff02d08579b62f33fffe6394cf'];
 
@@ -501,7 +501,7 @@ class LINE extends LineAPI {
 
         if(txt == 'response name') {
            if(isAdmin(seq.from) || isStaff(seq.from)) {
-            this._sendMessage(seq, 'тєαм αиυ вσт Hadir 􀂳');
+            this._sendMessage(seq, 'ᏆᎬᎪm ᎪᏁu bᎾᏆ 􀂳');
            }
         }
 
@@ -518,7 +518,7 @@ class LINE extends LineAPI {
         }
       else
         {
-         this._sendMessage(seq, 'Bubar Bubar Ada Anak Kebanyakan Micin~');
+         this._sendMessage(seq, 'nekopoi.host');
          }
      }
 
