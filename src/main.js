@@ -2,11 +2,11 @@ const LineAPI = require('./api');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 let exec = require('child_process').exec;
 
-var myStaff = ['uf7c3c593220a325c1c1fa27efeb13a9d','uf25c0403a3d183da6596ab2d3625ab06'];
+var myStaff = ['u16c87102beec3a162c9098c765519630'];
 
-const myAdmin = ['ub4974c6489c969402713a974b568ee9e','ue6ab7d65e34868a3e2cc2d655eedf25b','ub541f0703be3a3c29a6c05cf3c85f073','u63985fff02d08579b62f33fffe6394cf'];
+const myAdmin = ['u16c87102beec3a162c9098c765519630'];
 
-const myBot = ['u21223b2de309c505df44ad1e2d3fe4f2'];
+const myBot = ['u16c87102beec3a162c9098c765519630'];
 var vx = {};var midnornama = "";var pesane = "";var kickhim = "";var waitMsg = "no";//DO NOT CHANGE THIS
 var banList = ['u7c7378f31692530ca246508d7a2ca13d'];//Banned list
 var komenTL = "AutoLike by GoogleX\nline://ti/p/~kobe2k17"; //Comment for timeline
@@ -49,8 +49,8 @@ class LINE extends LineAPI {
             lockinvite: 0,
             lockupdategroup: 0,
             lockjoin: 0,
-            lockcancel: 1,
-            kick:1,
+            lockcancel: 0,
+            kick:0,
             cancel: 1,
         }
     }
