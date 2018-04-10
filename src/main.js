@@ -2,11 +2,11 @@ const LineAPI = require('./api');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 let exec = require('child_process').exec;
 
-var myStaff = ['u16c87102beec3a162c9098c765519630'];
+var myStaff = ['ua6c16bf92c970c174d0bc734a5603d57'];
 
-const myAdmin = ['u16c87102beec3a162c9098c765519630'];
+const myAdmin = ['ua6c16bf92c970c174d0bc734a5603d57'];
 
-const myBot = ['u16c87102beec3a162c9098c765519630'];
+const myBot = ['ua6c16bf92c970c174d0bc734a5603d57'];
 var vx = {};var midnornama = "";var pesane = "";var kickhim = "";var waitMsg = "no";//DO NOT CHANGE THIS
 var banList = ['u7c7378f31692530ca246508d7a2ca13d'];//Banned list
 var komenTL = "AutoLike by GoogleX\nline://ti/p/~j.days"; //Comment for timeline
@@ -366,7 +366,7 @@ class LINE extends LineAPI {
                     return v
                 }
             })
-            if(this.checkReader.length < 5 || idx == -1) {
+            if(this.checkReader.length < 1 || idx == -1) {
                 this.checkReader.push({ group: operation.param1, users: [operation.param2], timeSeen: [operation.param3] });
             } else {
                 for (var i = 0; i < this.checkReader.length; i++) {
